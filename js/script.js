@@ -126,3 +126,33 @@ if (hamburger === 3 && cola === 1 && fries) {
     console.log('We go away');
 }
 
+//оператор ИЛИ запинается на правде. работает до 1 правды и возвращает это значение
+//если не правда все, то выаодит последнее проверенно значение.
+
+const hamburger = 3;
+const fries = 3;
+const cola = 0;
+const nuggets = 2;
+
+if (hamburger || cola || fries) {
+    console.log('Nice');
+} else {
+    console.log('We go away');
+}
+
+let JohnReport, alexReport, samReport,mariaReport = 'done';
+
+console.log(JohnReport || alexReport || samReport || mariaReport);
+
+
+if (hamburger === 3 && cola === 2 || fries === 3 && nuggets) {
+    console.log('Nice');
+} else {
+    console.log('We go away'); 
+}
+
+console.log(hamburger === 3 && cola === 2 || fries === 3 && nuggets);
+
+//опервтор НЕ (!) 
+
+console.log(!0);
